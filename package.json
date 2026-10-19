@@ -1,0 +1,40 @@
+{
+  "name": "@shibosoftwaredev/dataset-srj35-sitara",
+  "version": "0.0.1",
+  "description": "Four complete Sitara Altium boards converted to Simple Route JSON",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "samples",
+    "circuit-json",
+    "source-svg",
+    "tests/__snapshots__",
+    "source-files.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "format:check": "biome format .",
+    "generate": "bun scripts/generate.mjs",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.6",
+    "@tscircuit/capacity-autorouter": "0.0.989",
+    "@tscircuit/core": "0.0.2165",
+    "altium-to-circuit-json": "github:tscircuit/altium-to-circuit-json#a9b8bd37e77bcb35790d91d2d033ed58d8a49a7b",
+    "altiumts": "github:tscircuit/altiumts#50434443e86e4598b653cbdbed9d204649c905f2",
+    "bun-match-svg": "0.0.17",
+    "circuit-json": "0.0.528",
+    "circuit-to-svg": "0.0.445",
+    "fflate": "0.8.3",
+    "graphics-debug": "0.0.99",
+    "stack-svgs": "0.0.1",
+    "tscircuit": "0.0.2900"
+  },
+  "trustedDependencies": [
+    "altiumts",
+    "altium-to-circuit-json"
+  ]
+}
